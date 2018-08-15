@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+header {
+  width:100%;
+  height: 5rem;
+  display: grid;
+  grid-column: 2/-2;
+  grid-row: 1/2;
+}
+
+.home, .random {
+  width:100%;
+  grid-column: 2/-2; 
+  grid-row: 2;
+}
+
+.gifs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gif{
+  width: 100%;
+  height: auto;
+}
+
+.random .gifs{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
